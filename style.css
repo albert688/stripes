@@ -1,0 +1,131 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: arial;
+	position: absolute;
+	top: : 50%;
+    display: flex;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.boton1 {
+	font-size: 49px;
+	background-color: #244F75;
+    width: 250px; 
+    height: 800px;
+    text-align: center;
+     
+}
+.boton2 {
+	font-size: 49px;
+	background-color: #60BFBF;
+    width: 250px; 
+    height: 800px;
+    text-align: center;
+    animation-name: stripe;
+    animation-duration: 4s;
+}
+.boton3 {
+	font-size: 49px;
+	background-color: #8C4B7E;
+    width: 250px; 
+    height: 800px;
+    text-align: center;
+    animation-name: stripe;
+    animation-duration: 4s;
+}
+    
+.boton4 {
+	font-size: 49px;
+	background-color: #F8BB44;
+    width: 250px; 
+    height: 800px;
+    text-align: center;
+    }
+.boton5 {
+	font-size: 49px;
+	background-color: #F24B4B;
+    width: 250px; 
+    height: 800px;
+    text-align: center;
+     animation-name: stripe;
+    animation-duration: 4s;
+}
+
+
+.boton1:hover::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 800px;
+  background: white;
+  opacity: 0.05;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+          transform: skew(30deg) scaleY(1) translate(0, 0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.boton2:hover::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 500px;
+  width: 250px;
+  height: 800px;
+  background: white;
+  opacity: 0.05;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+          transform: skew(30deg) scaleY(1) translate(0, 0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.boton4:hover::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 1000px;
+  width: 250px;
+  height: 800px;
+  background: white;
+  opacity: 0.05;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+          transform: skew(30deg) scaleY(1) translate(0, 0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+ @keyframes stripe {
+ 0% {
+ -webkit-transform: translate3d(-100%, 0, 0);
+ transform: translate3d(-100%, 0, 0);
+background-color: rosybrown;
+font-size: 20px;
+ }
+ 100% {
+ -webkit-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
+font-size: 49px;
+    }
+}
+
+
+
+
+
+ 
